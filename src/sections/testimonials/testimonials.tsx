@@ -1,6 +1,6 @@
 import classes from "./testimonials.module.css";
 
-import { Title, Text, Container, Flex, Card, Avatar, Group } from "@mantine/core";
+import { Title, Text, Container, Flex, Card, Avatar } from "@mantine/core";
 
 function CardTestimonial() {
   return (

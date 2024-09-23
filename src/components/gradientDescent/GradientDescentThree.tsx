@@ -9,7 +9,7 @@ import { Canvas, useFrame } from "@react-three/fiber";
 import { OrbitControls } from "@react-three/drei";
 
 import { SurfaceFunction } from "./FunctionToMinimize";
-import { GenerateSurface, Surface3D } from "./Surface";
+import { Surface3D } from "./Surface";
 import { Ball } from "./Ball";
 // import { useControls } from 'leva';
 // import { Perf } from "r3f-perf";
@@ -53,8 +53,8 @@ const GradientDescentAlgorithm = ({ size }: { size: number }) => {
   const mesh = useRef<THREE.Mesh>(null);
   const ballMaterialRef = useRef<THREE.MeshStandardMaterial>(null);
 
-  const [alpha, setAlpha] = useState<number>(0.1);
-  const [theta, setTheta] = useState<number>(0.5);
+  const [alpha] = useState<number>(0.1);
+  const [theta] = useState<number>(0.5);
   const [trail, setTrail] = useState<THREE.Vector3[]>([]);
   const [position, setPosition] = useState<number[]>([-0.5, 0, -0.15]);
   const [isMoving, setIsMoving] = useState<boolean>(true);

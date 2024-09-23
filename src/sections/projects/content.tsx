@@ -77,7 +77,7 @@ function ProjetCard({ cardContent }: { cardContent: CardContent }) {
         <a
             href={cardContent.url}
             target="_blank"
-            style={{ display: "flex", textDecoration: "none" }}
+            style={{ display: "flex", textDecoration: "none", alignItems: "stretch" }}
         >
             <Card
                 ref={ref}

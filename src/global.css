@@ -1,0 +1,51 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+:root {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+* {
+    font-family: "Poppins";
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+    scrollbar-width: thin;
+    scrollbar-color: #555 #2c2c2c;
+}
+
+body {
+    --background-color: var(--mantine-color-dark-8);
+    background-color: var(--background-color);
+}
+
+section {
+    --section-width: 1200px;
+    max-width: var(--section-width);
+    padding: 0rem 2.5rem;
+    margin-right: auto;
+    margin-left: auto;
+    position: relative;
+}
+
+.spacing {
+    padding-top: calc(1.5 * var(--mantine-spacing-xl));
+    padding-bottom: calc( 2 * var(--mantine-spacing-xl));
+}
+
+.section-spacing-top {
+    padding-top: var(--mantine-spacing-lg);
+}
+
+.section-title {
+    color: white;
+    font-size: 2.4rem;
+    letter-spacing: 0.125rem;
+    text-align: center;
+    margin-bottom: var(--mantine-spacing-lg);
+}

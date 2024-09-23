@@ -1,0 +1,28 @@
+.tab, .panel {
+    padding: var(--mantine-spacing-md) var(--mantine-spacing-lg);
+    border-radius: var(--mantine-radius-md);
+    border: 1px solid var(--mantine-color-dark-5);
+    background-color: var(--mantine-color-dark-6);
+    color: var(--mantine-color-dark-0);
+    font-weight: 600;
+    font-size: 1rem;
+}
+
+.panel {
+    margin-left: 16px;
+}
+
+.tab:not(:first-of-type) {
+    margin-top: 16px;
+}
+
+.tab:hover {
+    background-color: var(--mantine-color-dark-8);
+}
+
+.tab[data-active] {
+    z-index: 1;
+    border-color: var(--mantine-color-dark-3);
+    background-color: var(--mantine-color-dark-4);
+    color: var(--mantine-color-white);
+}

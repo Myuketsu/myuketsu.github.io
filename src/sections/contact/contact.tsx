@@ -8,6 +8,7 @@ import {
   Avatar,
   Button,
   Group,
+  Anchor,
 } from "@mantine/core";
 
 export default function Contact() {
@@ -32,38 +33,56 @@ export default function Contact() {
           </a>
         </Container>
         <Group>
-          <Button
-            leftSection={
-              <Avatar
-                src="./images/buttons/linkedIn.png"
-                alt="LinkedIn"
-                size={"sm"}
-              />
-            }
-            variant="light"
+          <Anchor
+            href="https://www.linkedin.com/in/alexandre-leys-bdx/"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            LinkedIn
-          </Button>
-          <Button
-            leftSection={
-              <Avatar src="./images/buttons/github.png" alt="GitHub" />
-            }
-            variant="light"
+            <Button
+              leftSection={
+                <Avatar
+                  src="./images/buttons/linkedIn.png"
+                  alt="LinkedIn"
+                  size={"sm"}
+                />
+              }
+              variant="light"
+            >
+              LinkedIn
+            </Button>
+          </Anchor>
+          <Anchor
+            href="https://github.com/Myuketsu"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            GitHub
-          </Button>
-          <Button
-            leftSection={
-              <Avatar
-                src="./images/buttons/kaggle.svg"
-                alt="Kaggle"
-                size={"sm"}
-              />
-            }
-            variant="light"
+            <Button
+              leftSection={
+                <Avatar src="./images/buttons/github.png" alt="GitHub" />
+              }
+              variant="light"
+            >
+              GitHub
+            </Button>
+          </Anchor>
+          <Anchor
+            href="https://www.kaggle.com/myuketsu"
+            target="_blank"
+            rel="noopener noreferrer"
           >
-            Kaggle
-          </Button>
+            <Button
+              leftSection={
+                <Avatar
+                  src="./images/buttons/kaggle.svg"
+                  alt="Kaggle"
+                  size={"sm"}
+                />
+              }
+              variant="light"
+            >
+              Kaggle
+            </Button>
+          </Anchor>
         </Group>
       </Flex>
     </section>
